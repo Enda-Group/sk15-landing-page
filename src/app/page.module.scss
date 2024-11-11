@@ -1,0 +1,74 @@
+.container{
+  margin: 0 auto; /* Centers the container horizontally */
+  height: 60vh;
+  overflow: hidden; /* Prevents overflow from children */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .body{
+      margin-left: 10vw;
+      h1{
+          color: black;
+          margin: 0px;
+          margin-top:0px;
+          font-size: 5vw;
+          line-height: 5vw;
+          text-transform: uppercase;
+      }
+      p{
+          color: black;
+          margin: 0px;
+          margin-top: 10px;
+          font-size: 3vw;
+          text-transform: uppercase;
+          span{
+              position: relative;
+          }
+      }
+  }
+  .images {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      position: relative;
+      margin-top: 0vh;
+      
+  
+      .imageContainer {
+          position: absolute;
+          img {
+              object-fit: cover;
+          }
+  
+          &:nth-of-type(1) {
+              height: 50vh;
+              width: 100%;
+              z-index: 1;
+          }
+  
+          &:nth-of-type(2) { // This targets Picture2
+              left: 40vw; // Adjusted left position
+              top: 15vh;
+              height: 40vh;
+              width: 30vh;
+              z-index: 2;
+          }
+  
+          &:nth-of-type(3) { // This targets Picture3
+              left: 5vw; // Adjusted left position
+              top: 30vh;
+              height: 30vh;
+              width: 20vh;
+              z-index: 3;
+          }
+      }
+
+
+  }.textSection {
+  margin-top: 2rem; /* Adds space between images and text */
+  padding: 0 10vw;  /* Optional: Adds side padding for readability */
+  text-align: center;
+}
+  
+  
+}
