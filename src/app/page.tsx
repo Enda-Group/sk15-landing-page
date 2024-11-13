@@ -22,9 +22,9 @@ export default function Home() {
 
   return (
     <div className="App">
-      {/*<StickyNavbar/>
+      <StickyNavbar/>
       <ZoomParallax   />
-      <FramerMotion />*/}
+      <FramerMotion />
       <History data={[{
         year: '2009',
         description: 'We started our journey',
