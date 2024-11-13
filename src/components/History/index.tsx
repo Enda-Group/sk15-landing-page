@@ -71,7 +71,7 @@ const History: React.FC<HistoryProps> = ({data}) => {
             </div>
             {index % 2 === 1 && <div className="line right"></div>}
           </div>,
-          <div className="hline"></div>]
+          <div key={`hline${index}`} className="hline"></div>]
         )
       )}
       {/* REMOVE BELOW*/}
