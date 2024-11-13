@@ -1,0 +1,25 @@
+.container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; // Space between rows
+    height: 50vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 40px; // Space between award items
+    white-space: nowrap;
+}
+
+.awardText {
+    font-size: 1.5rem; // Keep font size consistent across rows
+    color: #333;
+    font-weight: 600;
+    white-space: nowrap; // Prevents line breaking for smoother parallax effect
+    text-align: center;
+    padding: 0 1rem; // Add padding to create space around each text item
+    position: relative;
+    display: inline-block;
+}

@@ -25,7 +25,7 @@ export default function StickyNavbar({ title }: NavbarProps) {
         isSticky ? ' bg-white' : 'bg-transparent'
       }`}
     >
-      <nav className="flex justify-center items-center p-4 max-w-screen-lg mx-auto">
+      <nav className="flex justify-center items-center p-4 max-w-screen-lg mx-auto ">
         <div className="flex items-center space-x-2">
           {title && (
             <div className="flex justify-center items-center">

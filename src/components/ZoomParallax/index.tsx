@@ -20,7 +20,7 @@ export default function Index() {
     const scale4 = useTransform(scrollYProgress, [0, 1], [5, 0.6]);
 
     // Create a dynamic blur transform
-    const blurAmount = useTransform(scrollYProgress, [0, 1], ["blur(5px)", "blur(0px)"]);
+    const blurAmount = useTransform(scrollYProgress, [0, 1], ["blur(10px)", "blur(0px)"]);
 
     // Add rotation in 3D
     const rotateY = useTransform(scrollYProgress, [0.7, 1], [0, 45]);
