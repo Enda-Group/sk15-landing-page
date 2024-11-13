@@ -7,6 +7,10 @@ import FramerMotion from '../components/hero';
 import Lenis from '@studio-freight/lenis';
 import { useEffect } from 'react';
 import StickyNavbar from "@/components/StickyNavbar";
+import AnimatesSvg from "@/components/AnimatesSvg";
+import Index from "@/components/ZoomParallax";
+import CounterZoom from "@/components/CounterZoom";
+import AwardScroll from "@/components/AwardScroll";
 import History from "@/components/History";
 export default function Home() {
   useEffect(() => {
@@ -19,7 +23,6 @@ export default function Home() {
 
     requestAnimationFrame(raf);
   }, []);
-
   return (
     <div className="App">
       <StickyNavbar/>
@@ -58,6 +61,10 @@ export default function Home() {
         description: 'We started our journey',
         images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
       }]}/>
+
+      <CounterZoom/>
+      <div>
+      <AwardScroll/></div>
 
     </div>
   );
