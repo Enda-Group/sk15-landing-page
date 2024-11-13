@@ -1,6 +1,6 @@
 .container{
   margin: 0 auto; /* Centers the container horizontally */
-  height: 60vh;
+  height: 70vh;
   overflow: hidden; /* Prevents overflow from children */
   display: flex;
   flex-direction: column;
@@ -35,30 +35,27 @@
       
   
       .imageContainer {
-          position: absolute;
-          img {
-              object-fit: cover;
-          }
-  
-          &:nth-of-type(1) {
-              height: 50vh;
-              width: 100%;
-              z-index: 1;
-          }
-  
-          &:nth-of-type(2) { // This targets Picture2
-              left: 40vw; // Adjusted left position
-              top: 15vh;
-              height: 40vh;
-              width: 30vh;
-              z-index: 2;
-          }
-  
-          &:nth-of-type(3) { // This targets Picture3
-              left: 5vw; // Adjusted left position
-              top: 30vh;
-              height: 30vh;
-              width: 20vh;
+        position: absolute;
+        img{
+            object-fit: cover;
+        }
+        &:nth-of-type(1){
+            height: 60vh;
+            width: 50vh;
+            z-index: 1;
+        }
+        &:nth-of-type(2){
+            left: 55vw;
+            top: 20vh;
+            height: 40vh;
+            width: 30vh;
+            z-index: 2;
+        }
+        &:nth-of-type(3) { // This targets Picture3
+            left: 5vw; // Adjusted left position
+            top: 30vh;
+            height: 30vh;
+            width: 20vh;
               z-index: 3;
           }
       }
