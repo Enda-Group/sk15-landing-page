@@ -27,8 +27,6 @@ export default function Home() {
     <div className="App">
       <StickyNavbar/>
       <ZoomParallax   />
-      
-      <FramerMotion />
       <FramerMotion />
       <History data={[{
         year: '2009',
@@ -67,7 +65,7 @@ export default function Home() {
       <CounterZoom/>
       <div>
       <AwardScroll/></div>
-  
+
     </div>
   );
-} 
+}
