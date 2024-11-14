@@ -1,19 +1,25 @@
+/* Import the custom font */
+@font-face {
+    font-family: 'VictoriaTypewriter';
+    src: url('/fonts/VictoriaTypewriterRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'VictoriaTypewriter', monospace; /* Apply to entire body */
     max-width: 800px;
     margin: 0 auto;
 }
 
 .section {
     height: 100vh;
-    /*background: #f4f4f4;*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .milestone {
-    /* fill the entire space in the width*/
     flex: 1;
     margin: 10px;
 }
@@ -33,16 +39,15 @@ body {
     margin: 0 10px;
     max-width: 100%;
     height: 3px;
-    background: rgba(255, 0, 0, 0.1); /* Greyed-out red */
+    background: rgba(255, 0, 0, 0.1);
     z-index: 10;
 }
 
 .line {
     position: relative;
-    /*top: 10%; !* Start 10% from top of each section *!*/
     width: 3px;
     height: 100vh;
-    background: rgba(255, 0, 0, 0.1); /* Greyed-out red */
+    background: rgba(114, 24, 0, 0.1);
     z-index: 10;
 }
 
@@ -55,7 +60,47 @@ body {
 }
 
 .images img {
-    max-width: 100%;
-    height: auto;
-    margin: 5px 0;
+    max-width: 60%;
+    height: 60%;
+    margin: 0 0;
+}
+
+.history-images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-image {
+    position: absolute;
+    max-width: 60%; /* Adjust as needed */
+    opacity: 0.9;
+    transform: scale(1.1);
+    filter: grayscale(100%);
+}
+
+/* Positioning and rotating each image for the layered effect */
+.history-image:nth-child(1) {
+    top: 0;
+    left: -30px;
+    transform: rotate(-5deg) scale(1.1);
+}
+
+.history-image:nth-child(2) {
+    top: 30px;
+    right: -20px;
+    transform: rotate(3deg) scale(1.1);
+}
+
+.history-image:nth-child(3) {
+    top: 60px;
+    left: -40px;
+    transform: rotate(-3deg) scale(1.1);
+}
+/* Optional specific styling for description text */
+.description-text {
+    font-family: 'VictoriaTypewriter', monospace;
+    color: brown;
 }

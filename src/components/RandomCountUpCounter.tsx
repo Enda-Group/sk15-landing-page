@@ -27,7 +27,12 @@ const RandomCountUpCounter = () => {
   if (!isClient) return null;
 
   return (
-    <div>
+    <div style={{
+      display: 'flex', 
+      justifyContent: 'center', 
+      alignItems: 'center', 
+      textAlign:"center"
+    }}>
       <h1>Count: {count.toLocaleString()}</h1>
     </div>
   );

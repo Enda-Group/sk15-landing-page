@@ -27,45 +27,68 @@ export default function Home() {
     <div className="App">
       <StickyNavbar/>
       <ZoomParallax   />
+      
       <FramerMotion />
+      <div className="p-8">
+      </div>
+      
+      <FramerMotion />
+      <div className="p-8">
+      </div>
       <History data={[{
         year: '2009',
-        description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
+        description: 'The Siti Khadijah brand was first established at Wisma Zelan in Permaisuri, but it was a temporary location without a permanent store. Later, they moved to the Bangi area near Wong Solo, where they set up an office and boutique.',
+        images: ['/images/2009-1.png', 
+          '/images/2009-2.png', 
+          '/images/2009-3.png']
       }, {
         year: '2010',
         description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
+        images: ['https://via.placeholder.com/150', 
+          'https://via.placeholder.com/150', 
+          'https://via.placeholder.com/150']
       }, {
         year: '2012',
-        description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
+        description: 'After a few years of producing garments from home, due to increasing demand and a growing staff, Siti Khadijah had to move to a more suitable premise.',
+        images: ['https://via.placeholder.com/150', 
+          'https://via.placeholder.com/150', 
+          'https://via.placeholder.com/150']
       }, {
         year: '2015',
-        description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
+        description: 'Siti Khadijah held its first international fashion show in London, marking its presence on the global stage.',
+        images: ['https://via.placeholder.com/150', 
+          'https://via.placeholder.com/150', 
+          'https://via.placeholder.com/150']
       }, {
         year: '2016',
         description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
+        images: ['https://via.placeholder.com/150', 
+          'https://via.placeholder.com/150', 
+          'https://via.placeholder.com/150']
       }, {
         year: '2018',
-        description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
+        description: "The first Siti Khadijah billboard was displayed. It became widely recognized and memorable, fulfilling the founder's wish to see it publicly showcased.",
+        images: ['https://via.placeholder.com/150', 
+          'https://via.placeholder.com/150', 
+          'https://via.placeholder.com/150']
       }, {
         year: '2020',
-        description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
+        description: 'Opened a boutique in the prestigious KLCC, further establishing the brand’s presence in high-profile locations.',
+        images: ['https://via.placeholder.com/150', 
+          'https://via.placeholder.com/150', 
+          'https://via.placeholder.com/150']
       }, {
         year: '2025',
         description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
+        images: ['https://via.placeholder.com/150', 
+          'https://via.placeholder.com/150', 
+          'https://via.placeholder.com/150']
       }]}/>
 
       <CounterZoom/>
       <div>
       <AwardScroll/></div>
-
+  
     </div>
   );
-}
+} 
