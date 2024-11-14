@@ -21,7 +21,7 @@ export default function StickyNavbar({ title }: NavbarProps) {
 
   return (
     <header
-      className={`fixed top-0 w-full z-999 transition-shadow duration-300 ${
+      className={`fixed top-0 w-full zIndex-999 transition-shadow duration-300 ${
         isSticky ? ' bg-white' : 'bg-transparent'
       }`}
     >

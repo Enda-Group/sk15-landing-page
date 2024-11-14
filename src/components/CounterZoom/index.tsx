@@ -53,7 +53,9 @@ export default function CounterZoom() {
 />
 {index === 0 && (
     <motion.div style={{ opacity: textOpacity }} className={styles.textOverlay}>
+        <p>
         <RandomCountUpCounter/>
+        </p>
     </motion.div>
 )}
 

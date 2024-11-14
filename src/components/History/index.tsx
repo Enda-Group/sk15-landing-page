@@ -25,7 +25,7 @@ const History: React.FC<HistoryProps> = ({data}) => {
         const percentage = (viewportHeight / 2 - lineTop) / (rect.height * 0.75);
         const progress = Math.max(0, Math.min(1, percentage)) * rect.height;
 
-        (line as HTMLElement).style.background = `linear-gradient(to bottom, rgba(255, 0, 0, 1) ${progress}px, rgba(255, 0, 0, 0) ${progress}px)`;
+        (line as HTMLElement).style.background = `linear-gradient(to bottom, #721824 ${progress}px, rgba(255, 0, 0, 0) ${progress}px)`;
       });
 
       // Horizontal lines progress
@@ -38,9 +38,9 @@ const History: React.FC<HistoryProps> = ({data}) => {
         const progress = percentage * rect.width;
 
         if (i % 2 === 0) {
-          (hline as HTMLElement).style.background = `linear-gradient(to right, rgba(255, 0, 0, 1) ${progress}px, rgba(255, 0, 0, 0) ${progress}px)`;
+          (hline as HTMLElement).style.background = `linear-gradient(to right, #721824 ${progress}px, rgba(255, 0, 0, 0) ${progress}px)`;
         } else {
-          (hline as HTMLElement).style.background = `linear-gradient(to left, rgba(255, 0, 0, 1) ${progress}px, rgba(255, 0, 0, 0) ${progress}px)`;
+          (hline as HTMLElement).style.background = `linear-gradient(to left, #721824 ${progress}px, rgba(255, 0, 0, 0) ${progress}px)`;
         }
       });
     };
@@ -64,9 +64,8 @@ const History: React.FC<HistoryProps> = ({data}) => {
                 <h1 style={{
                   color: 'brown'
                 }}>{item.year}</h1>
-                <p style={{
-                  color: 'brown'
-                }}>{item.description}</p>
+                 <p className="description-text">{item.description}</p>
+
               </div>
             </div>
             {index % 2 === 1 && <div className="line right"></div>}
@@ -74,6 +73,8 @@ const History: React.FC<HistoryProps> = ({data}) => {
           <div key={`hline${index}`} className="hline"></div>]
         )
       )}
+      {/* REMOVE BELOW*/}
+      <div className="p-8">DUMMY CONTENT</div>
     </div>
   );
 };

@@ -1,12 +1,12 @@
 .container{
   margin: 0 auto; /* Centers the container horizontally */
-  height: 70vh;
+  height: 50vh;
   overflow: hidden; /* Prevents overflow from children */
   display: flex;
   flex-direction: column;
   align-items: center;
   .body{
-      margin-left: 10vw;
+      
       h1{
           color: black;
           margin: 0px;
@@ -14,6 +14,7 @@
           font-size: 5vw;
           line-height: 5vw;
           text-transform: uppercase;
+          text-align: center;
       }
       p{
           color: black;
@@ -21,6 +22,7 @@
           margin-top: 10px;
           font-size: 3vw;
           text-transform: uppercase;
+          text-align: center;
           span{
               position: relative;
           }
@@ -40,30 +42,32 @@
             object-fit: cover;
         }
         &:nth-of-type(1){
-            height: 60vh;
-            width: 50vh;
-            z-index: 1;
+            top: 2vh;
+           left: 4vw;
+            height: 50vh;
+            width: 100%;
+            z-index: 3;
         }
         &:nth-of-type(2){
-            left: 55vw;
-            top: 20vh;
-            height: 40vh;
-            width: 30vh;
+            top: 12vh;
+           
+            height: 50vh;
+            width:50vh;
             z-index: 2;
         }
         &:nth-of-type(3) { // This targets Picture3
-            left: 5vw; // Adjusted left position
-            top: 30vh;
-            height: 30vh;
-            width: 20vh;
-              z-index: 3;
+            top: 6vh;
+            left: 10vw; // Adjusted left position
+            height: 50vh;
+            width: 40vh;
+              z-index: 1;
           }
       }
 
 
   }.textSection {
-  margin-top: 2rem; /* Adds space between images and text */
-  padding: 0 10vw;  /* Optional: Adds side padding for readability */
+  margin-top:   0rem; /* Adds space between images and text */
+  padding: 5vh 5vw;  /* Optional: Adds side padding for readability */
   text-align: center;
 }
   

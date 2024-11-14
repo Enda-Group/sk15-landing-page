@@ -1,9 +1,9 @@
 'use client';
 import { useRef } from "react";
 import styles from '../../app/page.module.scss';
-import Picture1 from '../../../public/images/telekung.png';
-import Picture2 from '../../../public/images/telekung2.png';
-import Picture3 from '../../../public/images/telekung3.png';
+import Picture1 from '../../../public/images/sk15- telekung1.png';
+import Picture2 from '../../../public/images/sk15- telekung2.png';
+import Picture3 from '../../../public/images/sk15- telekung3.png';
 import Image from "next/image";
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Paragraph from "../Word/Word";

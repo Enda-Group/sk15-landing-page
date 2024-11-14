@@ -1,5 +1,5 @@
 * {
-  font-family: sofia-pro, sans-serif;
+  font-family: sofia-pro, sans-serif,;
   font-weight: 800;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -47,7 +47,7 @@ body {
 
 h1 {
   font-size: 2rem;
-  margin-top: 14rem;
+  margin-top: 4rem;
   
 }
 
