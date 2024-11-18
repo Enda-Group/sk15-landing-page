@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Outlet from "./Outlet";
 
 const RandomCountUpCounter = () => {
   const [count, setCount] = useState(1533483);
@@ -27,9 +28,23 @@ const RandomCountUpCounter = () => {
   if (!isClient) return null;
 
   return (
-    <div>
-      <h1>Count: {count.toLocaleString()}</h1>
+   <div>
+    <div  className="grid grid-cols-2 justify-center items-center">
+    {/* <div style={{
+      display: 'flex', 
+      justifyContent: 'center', 
+      alignItems: 'center', 
+      textAlign:"center",
+    }} > */}
+      <div className='font-poppins font-bold text-[1.2rem] text-right'> {count.toLocaleString()} </div>
+        <div className="font-poppins text-[0.6rem]">Telekung Sold</div>
+        {/* </div> */}
+      </div>
+      <div>
+        <Outlet/>
+      </div>
     </div>
+     
   );
 };
 

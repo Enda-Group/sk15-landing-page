@@ -1,6 +1,6 @@
 * {
-  font-family: sofia-pro, sans-serif;
-  font-weight: 800;
+  
+  
   font-style: normal;
   -webkit-font-smoothing: antialiased;
 }
@@ -33,21 +33,11 @@ body {
   height: 500vh;
 }
 
-.navbar {
-  width: 100%;
-  background: var(--background);
-  border-bottom: 1px solid var(--accent);
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 5; /* Ensure navbar stays above the content */
-}
+
 
 h1 {
   font-size: 2rem;
-  margin-top: 14rem;
+  margin-top: ;
   
 }
 

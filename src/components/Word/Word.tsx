@@ -24,6 +24,7 @@ export default function Paragraph({ paragraph }: ParagraphProps) {
     <p
       ref={container}
       className={styles.paragraph}
+     
     >
       {
         words.map((word: string, i: number) => {
