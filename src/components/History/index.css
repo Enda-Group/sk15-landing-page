@@ -1,19 +1,31 @@
+/* Import the custom font */
+@font-face {
+    font-family: 'VictoriaTypewriter';
+    src: url('/fonts/VictoriaTypewriterRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'Poppins';
+  src: url('/fonts/Poppins-Black.ttf') format('truetype'); /* Adjust the path as needed */
+  font-weight: normal;
+    font-style: normal; /* Specify the weight range if needed */
+}
+
 body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
+    font-family: 'VictoriaTypewriter', monospace; /* Apply to entire body */
+
+    max-width: 430px;
     margin: 0 auto;
 }
 
 .section {
-    height: 100vh;
-    /*background: #f4f4f4;*/
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .milestone {
-    /* fill the entire space in the width*/
     flex: 1;
     margin: 10px;
 }
@@ -33,16 +45,15 @@ body {
     margin: 0 10px;
     max-width: 100%;
     height: 3px;
-    background: rgba(255, 0, 0, 0.1); /* Greyed-out red */
+    background: rgba(255, 0, 0, 0.1);
     z-index: 10;
 }
 
 .line {
     position: relative;
-    /*top: 10%; !* Start 10% from top of each section *!*/
     width: 3px;
-    height: 100vh;
-    background: rgba(255, 0, 0, 0.1); /* Greyed-out red */
+    height: 85vh;
+    background: rgba(114, 24, 0, 0.1);
     z-index: 10;
 }
 
@@ -54,8 +65,56 @@ body {
     right: 10px;
 }
 
-.images img {
-    max-width: 100%;
+.images-wrapper {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center; /* Center-align only the images */
+}
+
+.images-wrapper img {
+    max-width: 100%; /* Adjust as needed */
     height: auto;
-    margin: 5px 0;
+    margin: 4px 0;
+}
+
+.history-images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-image {
+    position: absolute;
+    max-width: 60%; /* Adjust as needed */
+    opacity: 0.9;
+    transform: scale(1.1);
+    filter: grayscale(100%);
+}
+
+/* Positioning and rotating each image for the layered effect */
+.history-image:nth-child(1) {
+    top: 0;
+    left: -30px;
+    transform: rotate(-5deg) scale(1.1);
+}
+
+.history-image:nth-child(2) {
+    top: 30px;
+    right: -20px;
+    transform: rotate(3deg) scale(1.1);
+}
+
+.history-image:nth-child(3) {
+    top: 60px;
+    left: -40px;
+    transform: rotate(-3deg) scale(1.1);
+}
+/* Optional specific styling for description text */
+.description-text {
+    font-family: 'VictoriaTypewriter', monospace;
+    color: #5f5f5f;
+    padding-top: 6px;
 }

@@ -21,25 +21,15 @@ export default function StickyNavbar({ title }: NavbarProps) {
 
   return (
     <header
-      className={`fixed top-0 w-full z-999 transition-shadow duration-300 ${
-        isSticky ? ' bg-white' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 w-[430px] transition-shadow duration-600 ${
+        isSticky ? 'bg-[#FAF3E0]' : 'bg-transparent'
+      }`} style={{zIndex:600}}
     >
-      <nav className="flex justify-center items-center p-4 max-w-screen-lg mx-auto ">
-        <div className="flex items-center space-x-2">
-          {title && (
-            <div className="flex justify-center items-center">
-              <Image src="/images/logoSK.png" alt="logo" width={50} height={50} />
-              <span className="ml-2 text-xl font-bold text-gray-800">Siti Khadijah</span>
-            </div>
-          )}
+      <nav className="flex items-center h-16 px-4">
+        {/* Centering the logo */}
+        <div className="flex items-center justify-center w-full">
+          <Image src="/images/logoSK.png" alt="logo" width={200} height={90} className="object-contain" />
         </div>
-        <ul className="flex justify-center space-x-6">
-          <li>
-          <Image src='/images/logoSK.png' alt='logo' width={300} height={90} />
-          </li>
-       
-        </ul>
       </nav>
     </header>
   );

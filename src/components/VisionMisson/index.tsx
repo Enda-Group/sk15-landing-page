@@ -1,17 +1,15 @@
 'use client';
 import { useRef } from "react";
 import styles from '../../app/page.module.scss';
-import Picture1 from '../../../public/images/sk15- telekung1.png';
-import Picture2 from '../../../public/images/sk15- telekung2.png';
-import Picture3 from '../../../public/images/sk15- telekung3.png';
-
+import Picture1 from '../../../public/images/VM1.png';
+import Picture2 from '../../../public/images/VM2.png';
+import Picture3 from '../../../public/images/VM3.png';
 import Image from "next/image";
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Paragraph from "../Word/Word";
 
-const word = "Our Story";
-const paragraph = `It all started when Puan Padzilah Enda Sulaiman, the founder, noticed that women often struggles to find a telekung that fits well and comfortable.
-This concern triggered the formation of Siti Khadijah back in 2009 - to ensure that women could opt for a better, more comfortable telekung through innovation as well as to improve user experience during praying activities.`;
+const word = "Vision and Mission";
+const paragraph = `To be the preferred international brand that advocates comfort, practicality and modesty in its lifestyle products`;
 
 export default function Index() {
     const container = useRef(null);
@@ -36,8 +34,7 @@ export default function Index() {
             <div className={styles.body}>
             <div className={styles.word} style={{fontSize:'2rem',
                  fontFamily:"Poppins",
-                 color:"#721824",
-                 paddingTop:'15px'}}>
+                 color:"#721824", marginBottom:'30px'}}>
                     <div className="font-bold text-[#721824]">{word}</div>
                 </div>
             </div>
@@ -51,7 +48,6 @@ export default function Index() {
                             placeholder="blur"
                             alt="image"
                             fill
-                            
                         />
                     </motion.div>
                 ))}
@@ -60,7 +56,9 @@ export default function Index() {
             {/* Text Section Below Hero Images */}
            
         </div> <div className={styles.textSection}>
-                <Paragraph paragraph={paragraph} />
+        <div className="text-gray-700 font-poppins font-semibold text-[1.5rem] pt-4">To Nurture </div>
+            <div className="text-gray-700 font-poppins font-semibold  text-[1.5rem]"> Purposeful Lifestyle</div>
+                <Paragraph  paragraph={paragraph} />
             </div></div>
     );
 }

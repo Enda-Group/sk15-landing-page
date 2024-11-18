@@ -25,7 +25,7 @@ const History: React.FC<HistoryProps> = ({data}) => {
         const percentage = (viewportHeight / 2 - lineTop) / (rect.height * 0.75);
         const progress = Math.max(0, Math.min(1, percentage)) * rect.height;
 
-        (line as HTMLElement).style.background = `linear-gradient(to bottom, rgba(255, 0, 0, 1) ${progress}px, rgba(255, 0, 0, 0) ${progress}px)`;
+        (line as HTMLElement).style.background = `linear-gradient(to bottom, #721824 ${progress}px, rgba(255, 0, 0, 0) ${progress}px)`;
       });
 
       // Horizontal lines progress
@@ -38,9 +38,9 @@ const History: React.FC<HistoryProps> = ({data}) => {
         const progress = percentage * rect.width;
 
         if (i % 2 === 0) {
-          (hline as HTMLElement).style.background = `linear-gradient(to right, rgba(255, 0, 0, 1) ${progress}px, rgba(255, 0, 0, 0) ${progress}px)`;
+          (hline as HTMLElement).style.background = `linear-gradient(to right, #721824 ${progress}px, rgba(255, 0, 0, 0) ${progress}px)`;
         } else {
-          (hline as HTMLElement).style.background = `linear-gradient(to left, rgba(255, 0, 0, 1) ${progress}px, rgba(255, 0, 0, 0) ${progress}px)`;
+          (hline as HTMLElement).style.background = `linear-gradient(to left, #721824 ${progress}px, rgba(255, 0, 0, 0) ${progress}px)`;
         }
       });
     };
@@ -57,23 +57,31 @@ const History: React.FC<HistoryProps> = ({data}) => {
           [<div key={index} className="section">
             {index % 2 === 0 && <div className="line left"></div>}
             <div className={`milestone ${index % 2 === 0 ? "left" : "right"}`}>
-              <div className="images">
-                {item.images.map((image, imgIndex) => (
-                  <img key={imgIndex} src={image} alt={`History ${item.year}`}/>
-                ))}
-                <h1 style={{
-                  color: 'brown'
-                }}>{item.year}</h1>
-                <p style={{
-                  color: 'brown'
-                }}>{item.description}</p>
-              </div>
-            </div>
+  <div className="images-wrapper">
+    {item.images.map((image, imgIndex) => (
+      <img key={imgIndex} src={image} alt={`History ${item.year}`} />
+    ))}
+  </div>
+  <div
+    style={{
+      color: '#721824',
+      fontFamily: 'Poppins',
+      paddingTop: '15px'
+    }}
+    className="font-semibold text-[3rem]"
+  >
+    {item.year}
+  </div>
+  <p className="description-text">{item.description}</p>
+</div>
+
             {index % 2 === 1 && <div className="line right"></div>}
           </div>,
           <div key={`hline${index}`} className="hline"></div>]
         )
       )}
+      {/* REMOVE BELOW*/}
+      <div className="p-8"></div>
     </div>
   );
 };

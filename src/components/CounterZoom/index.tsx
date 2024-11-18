@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
-import Picture1 from '../../../public/images/ambar4.png';
-import Picture2 from '../../../public/images/galleryRaya.png';
-import Picture3 from '../../../public/images/3.jpg';
+import Picture1 from '../../../public/images/SK151.jpg';
+import Picture2 from '../../../public/images/SK152.jpg';
+import Picture3 from '../../../public/images/SK153.jpg';
 
 import Image from 'next/image';
 import { useScroll, useTransform, motion } from 'framer-motion';
@@ -53,7 +53,9 @@ export default function CounterZoom() {
 />
 {index === 0 && (
     <motion.div style={{ opacity: textOpacity }} className={styles.textOverlay}>
+        <div>
         <RandomCountUpCounter/>
+        </div>
     </motion.div>
 )}
 
@@ -61,6 +63,7 @@ export default function CounterZoom() {
                     </motion.div>
                 ))}
             </div>
+            
         </div>
     );
 }

@@ -4,6 +4,7 @@ import ZoomParallax from "@/components/ZoomParallax";
 import Image from "next/image";
 import "@/styles.css";
 import FramerMotion from '../components/hero';
+import VisionMission from '../components/VisionMisson';
 import Lenis from '@studio-freight/lenis';
 import { useEffect } from 'react';
 import StickyNavbar from "@/components/StickyNavbar";
@@ -12,6 +13,7 @@ import Index from "@/components/ZoomParallax";
 import CounterZoom from "@/components/CounterZoom";
 import AwardScroll from "@/components/AwardScroll";
 import History from "@/components/History";
+import Footer from "@/components/Footer/Footer";
 export default function Home() {
   useEffect(() => {
     const lenis = new Lenis();
@@ -23,49 +25,70 @@ export default function Home() {
 
     requestAnimationFrame(raf);
   }, []);
-  return (
+  return (<div>
     <div className="App">
       <StickyNavbar/>
+      
       <ZoomParallax   />
+      
       <FramerMotion />
+      <div className="p-8">
+      </div>
+      
+      <VisionMission />
+      <div className="p-8">
+      </div>
       <History data={[{
         year: '2009',
-        description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
-      }, {
-        year: '2010',
-        description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
-      }, {
+        description: 'The Siti Khadijah brand was first established at Wisma Zelan in Permaisuri, but it was a temporary location without a permanent store. Later, they moved to the Bangi area near Wong Solo, where they set up an office and boutique.',
+        images: ['/images/2009.png']
+      }, 
+      // {
+      //   year: '2010',
+      //   description: 'We started our journey',
+      //   images: ['https://via.placeholder.com/150', 
+      //     'https://via.placeholder.com/150', 
+      //     'https://via.placeholder.com/150']
+      // },
+       {
         year: '2012',
-        description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
+        description: 'After a few years of producing garments from home, due to increasing demand and a growing staff, Siti Khadijah had to move to a more suitable premise.',
+        images: ['/images/2012.png']
       }, {
         year: '2015',
-        description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
-      }, {
-        year: '2016',
-        description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
-      }, {
+        description: 'Siti Khadijah held its first international fashion show in London, marking its presence on the global stage.',
+        images: ['/images/2015.png']
+       },
+       // {
+      //   year: '2016',
+      //   description: 'We started our journey',
+      //   images: ['https://via.placeholder.com/150', 
+      //     'https://via.placeholder.com/150', 
+      //     'https://via.placeholder.com/150']
+       //}, 
+       {
         year: '2018',
-        description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
+        description: "The first Siti Khadijah billboard was displayed. It became widely recognized and memorable, fulfilling the founder's wish to see it publicly showcased.",
+        images: ['/images/2018.png']
       }, {
         year: '2020',
-        description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
-      }, {
-        year: '2025',
-        description: 'We started our journey',
-        images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
-      }]}/>
+        description: 'Opened a boutique in the prestigious KLCC, further establishing the brand’s presence in high-profile locations.',
+        images: ['/images/2020.png']
+      }, 
+      // {
+      //   year: '2025',
+      //   description: 'We started our journey',
+      //   images: ['https://via.placeholder.com/150', 
+      //     'https://via.placeholder.com/150', 
+      //     'https://via.placeholder.com/150']
+      // }
+      ]}/>
 
       <CounterZoom/>
       <div>
-      <AwardScroll/></div>
-
-    </div>
+      <AwardScroll/>
+      <Footer/></div>
+  
+    </div></div>
   );
-}
+} 
