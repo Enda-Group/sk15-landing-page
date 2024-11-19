@@ -11,7 +11,7 @@ export default function Index() {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,
-        offset: ['start start', 'end end']
+        offset: ['start start', 'end end'],
     });
 
 
