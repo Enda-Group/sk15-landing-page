@@ -3,7 +3,7 @@ import ImageSlider from '../ImageSlider'
 
 export default function Content() {
   return (
-    <div className='bg-[#6e1824] py-8 h-full w-full flex flex-col justify-between'>
+    <div className='bg-[#5a1c24] py-8 h-full w-full flex flex-col justify-between'>
         <Section1 />
         <Section2 />
     </div>

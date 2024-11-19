@@ -75,13 +75,11 @@ export default function Home() {
         description: 'Opened a boutique in the prestigious KLCC, further establishing the brand’s presence in high-profile locations.',
         images: ['/images/2020.png']
       }, 
-      // {
-      //   year: '2025',
-      //   description: 'We started our journey',
-      //   images: ['https://via.placeholder.com/150', 
-      //     'https://via.placeholder.com/150', 
-      //     'https://via.placeholder.com/150']
-      // }
+      {
+        year: '2024',
+        description: 'The launching of Laman Khadijah',
+        images: ['/images/2024.png']
+      }
       ]}/>
 
       <CounterZoom/>

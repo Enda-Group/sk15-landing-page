@@ -1,5 +1,5 @@
 .container {
-    height: 300vh;
+    height: 150vh;
     position: relative;
     width: 430px;
 
@@ -23,7 +23,7 @@
                 top: 50%;
                 left: 50%;
                 width: 80vw;
-                height: 38vh;
+                height: 40vh;
                 display: flex;
                 transform: translate(-50%, -50%);
                 color: #fff;
@@ -44,9 +44,9 @@
                 z-index: 3; // Set Picture 1 on top of the others
                 .imageContainer {
                     position: relative;
-                    top: 2vh;
-                    width: 80%;
-                    height: 38vh;
+                 
+                    width: 100%;
+                    height: 40vh;
                     left: 0.001rem;
                     // Center horizontally
                 }
@@ -57,11 +57,11 @@
                 z-index: 1;
                 .imageContainer {
                     position: relative;
-                    top: -35vh;
-                    left: 20%;
-                    width: 80%;
-                    height: 32vh;
-                    object-fit: cover;
+                    top: -25vh;
+                    
+                    width: 100%;
+                    height: 50%;
+                   
                     
                 }
             }
@@ -76,6 +76,29 @@
                     width: 80%;
                     height: 32vh;
                     object-fit: cover;
+                }
+            }
+            &:nth-of-type(4){
+                .imageContainer{
+                    left: 27.5vw;
+                    width: 25vw;
+                    height: 25vh;
+                }
+            }
+            &:nth-of-type(5){
+                .imageContainer{
+                    top: 27.5vh;
+                    left: 5vw;
+                    width: 20vw;
+                    height: 25vh;
+                }
+            }
+            &:nth-of-type(6){
+                .imageContainer{
+                    top: 27.5vh;
+                    left: -22.5vw;
+                    width: 30vw;
+                    height: 25vh;
                 }
             }
         }

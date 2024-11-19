@@ -51,7 +51,8 @@ const History: React.FC<HistoryProps> = ({data}) => {
     };
   }, []);
 
-  return (
+  return (<div>
+    <h1 className="font-poppins text-[2rem] text-[#721824] font-bold flex justify-center"> How We Started</h1>
     <div>
       {data.map((item, index) => (
           [<div key={index} className="section">
@@ -82,7 +83,7 @@ const History: React.FC<HistoryProps> = ({data}) => {
       )}
       {/* REMOVE BELOW*/}
       <div className="p-8"></div>
-    </div>
+    </div></div>
   );
 };
 

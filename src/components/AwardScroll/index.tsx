@@ -57,12 +57,33 @@ export default function AwardScroll() {
         transition: {
             repeat: Infinity,
             repeatType: "loop" as const,
-            duration: 30,
+            duration: 15,
+            ease: "linear"
+        }
+    };
+    const scrollAnimationRow4 = {
+        x: [0, -1000],
+        transition: {
+            repeat: Infinity,
+            repeatType: "loop" as const,
+            duration: 20,
             ease: "linear"
         }
     };
 
-    return (
+    const scrollAnimationRow5 = {
+        x: [-1000, 0],
+        transition: {
+            repeat: Infinity,
+            repeatType: "loop" as const,
+            duration: 15,
+            ease: "linear"
+        }
+    };
+
+
+    return (<div>
+        <div className='text-[#721824] text-[1.5rem] mb-8 font-poppins'> We've won a few things </div>
         <div ref={containerRef} className={styles.container}>
             {/* Row 1 */}
             <motion.div className={styles.row} animate={scrollAnimationRow1}>
@@ -90,6 +111,22 @@ export default function AwardScroll() {
                     </motion.h2>
                 ))}
             </motion.div>
-        </div>
+            <motion.div className={styles.row} animate={scrollAnimationRow4}>
+                {loopedRow1.map((award, index) => (
+                    <motion.h2 key={`row1-${index}`} className={styles.awardText}>
+                        {award}
+                    </motion.h2>
+                ))}
+            </motion.div>
+
+            {/* Row 2 */}
+            <motion.div className={styles.row} animate={scrollAnimationRow5}>
+                {loopedRow2.map((award, index) => (
+                    <motion.h2 key={`row2-${index}`} className={styles.awardText}>
+                        {award}
+                    </motion.h2>
+                ))}
+            </motion.div>
+        </div></div>
     );
 }

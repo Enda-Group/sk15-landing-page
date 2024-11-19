@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
 import Picture1 from '../../../public/images/SK151.jpg';
-import Picture2 from '../../../public/images/SK152.jpg';
-import Picture3 from '../../../public/images/SK153.jpg';
+import Picture2 from '../../../public/images/ZoomREF.png';
+// import Picture3 from '../../../public/images/Zoom2.png';
 
 import Image from 'next/image';
 import { useScroll, useTransform, motion } from 'framer-motion';
@@ -28,18 +28,20 @@ export default function CounterZoom() {
             src: Picture1,
             scale: scale4
         },
-        {
-            src: Picture2,
-            scale: scale5
-        },
-        {
-            src: Picture3,
-            scale: scale6
-        },
+        // {
+        //     src: Picture2,
+        //     scale: scale5
+        // },
+        // {
+        //     src: Picture3,
+        //     scale: scale6
+        // },
     ];
 
-    return (
+    return (<div>
+        {/* <p>The years with us</p> */}
         <div ref={container} className={styles.container}>
+            
             <div className={styles.sticky}>
                 {pictures.map(({ src, scale }, index) => (
                     <motion.div key={index} style={{ scale }} className={styles.el}>
@@ -64,6 +66,6 @@ export default function CounterZoom() {
                 ))}
             </div>
             
-        </div>
+        </div></div>
     );
 }
