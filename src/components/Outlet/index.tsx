@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import anime from "animejs"; // Ensure you install anime.js: `npm install animejs`
+import anime from "animejs";
 
 const Outlet = () => {
   const countRef58 = useRef<HTMLDivElement>(null);
@@ -10,7 +10,7 @@ const Outlet = () => {
       const data = { count: 0 };
       anime({
         targets: data,
-        count: [0, target],
+        count: [0, target], // This works with the updated type definition
         duration: 6000,
         round: 1,
         delay: 200,
