@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import anime from "animejs"; // Ensure you install anime.js: `npm install animejs`
-import styles from "./outlet.module.scss";
 
 const Outlet = () => {
   const countRef58 = useRef<HTMLDivElement>(null);
