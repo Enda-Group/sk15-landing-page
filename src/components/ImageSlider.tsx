@@ -4,9 +4,10 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  { src: "/images/SK151.jpg" },
-  { src: "/images/SK152.jpg" },
-  { src: "/images/SK153.jpg" },
+  { src: "/images/VC1.JPG" },
+  { src: "/images/VC2.jpeg" },
+  { src: "/images/VC3.jpeg" },
+  { src: "/images/VC4.jpg" },
 ];
 
 export default function ImageSlider(): JSX.Element {

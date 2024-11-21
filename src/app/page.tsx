@@ -62,7 +62,8 @@ export default function Home() {
       <CounterZoom/>
       <div>
       <AwardScroll/>
-      <Footer/></div>
+      <Footer/>
+      </div>
   
     </div></div>
   );

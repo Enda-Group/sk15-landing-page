@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import styles from './styles.module.scss';
+import Footer from '../Footer/Footer';
 
 export default function AwardScroll() {
     const containerRef = useRef(null);
@@ -90,6 +91,22 @@ export default function AwardScroll() {
                     </motion.h2>
                 ))}
             </motion.div>
+
+            <motion.div className={styles.row} animate={scrollAnimationRow1}>
+                {loopedRow1.map((award, index) => (
+                    <motion.h2 key={`row1-${index}`} className={styles.awardText}>
+                        {award}
+                    </motion.h2>
+                ))}
+            </motion.div>
+            <motion.div className={styles.row} animate={scrollAnimationRow2}>
+                {loopedRow2.map((award, index) => (
+                    <motion.h2 key={`row2-${index}`} className={styles.awardText}>
+                        {award}
+                    </motion.h2>
+                ))}
+            </motion.div>
+           
         </div>
     );
 }
