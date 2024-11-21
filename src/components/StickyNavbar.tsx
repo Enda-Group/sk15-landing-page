@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
 interface NavbarProps {
@@ -7,11 +7,13 @@ interface NavbarProps {
 }
 
 export default function StickyNavbar({ title }: NavbarProps) {
+  const rect = useRef<any>(null)
   const [isSticky, setSticky] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setSticky(window.scrollY > 0);
+      const logo =  rect.current.getBoundingClientRect()
+      setSticky(logo.top <  5);
     };
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -19,18 +21,26 @@ export default function StickyNavbar({ title }: NavbarProps) {
     };
   }, []);
 
-  return (
-    <header
-      className={`fixed top-0 w-[430px] transition-shadow duration-600 ${
-        isSticky ? 'bg-[#FAF3E0]' : 'bg-transparent'
-      }`} style={{zIndex:600}}
-    >
-      <nav className="flex items-center h-16 px-4">
-        {/* Centering the logo */}
-        <div className="flex items-center justify-center w-full">
-          <Image src="/images/logoSK.png" alt="logo" width={200} height={90} className="object-contain" />
-        </div>
-      </nav>
-    </header>
-  );
+  return (<div style={{
+    top: 0,
+    position: 'sticky',
+   
+ 
+    zIndex: 9999,
+  }}>  <header
+  ref={rect}
+  className={` top-0 w-[430px] transition-shadow duration-600 ${
+    isSticky ? 'bg-[#faf3e0d7]' : 'bg-transparent'
+  }`} style={{zIndex:600}}
+>
+  <nav className="flex items-center h-16 px-4 w-[430px]">
+    
+    {/* Centering the logo */}
+    <div className="flex items-center justify-center w-full">
+      <Image src="/images/logoSK.png" alt="logo" width={200} height={90} className="object-contain" />
+    </div>
+  </nav>
+</header>
+</div>
+  )
 }

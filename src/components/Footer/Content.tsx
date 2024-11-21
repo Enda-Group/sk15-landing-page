@@ -50,7 +50,7 @@ const Nav = () => {
 </div> */}
           
                 <div className='flex  text-left justify-start mx-10 my-4 font-poppins font-medium text-[4rem] leading-tight'>Experience it Yourself</div>
-            <p className='mx-10 text-left font-poppins'>at Laman Khadijah Visitor Center, Nilai</p>    
+                <p className='mx-10 text-left font-poppins'>at Laman Khadijah Visitor Center, Nilai</p>   
             </div>
         </div>
     )

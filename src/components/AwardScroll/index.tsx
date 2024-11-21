@@ -106,7 +106,6 @@ export default function AwardScroll() {
                     </motion.h2>
                 ))}
             </motion.div>
-           
         </div>
     );
 }

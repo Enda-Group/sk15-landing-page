@@ -7,6 +7,7 @@
         overflow: hidden;
         top: 0;
         height: 100vh;
+        width: 430px;
 
         .el {
             width: 100%;
@@ -87,6 +88,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    z-index: '20';
     
 
     img {

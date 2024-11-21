@@ -23,6 +23,11 @@ export default function Home() {
   }, []);
   return (<div>
     <div className="App">
+      <div style={{
+        height: '45vh'
+      }}></div>
+      <h1 style={{ color:'#721824', fontFamily:'poppins', zIndex:'90000'}}>
+        The Home Of</h1>
       <StickyNavbar/>
       
       <ZoomParallax   />

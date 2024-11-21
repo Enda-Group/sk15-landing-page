@@ -20,6 +20,8 @@ export default function Index() {
 
     // Create a dynamic blur transform
     const blurAmount = useTransform(scrollYProgress, [0, 1], ["blur(10px)", "blur(0px)"]);
+    
+    
 
     // Add rotation in 3D
     const rotateY = useTransform(scrollYProgress, [0.7, 1], [0, 35]);
@@ -35,7 +37,7 @@ export default function Index() {
     return (
     
       
-<div className='overflow-x-clip h-[200vh]' >
+<div className='top-0 absolute overflow-x-clip h-[200vh]' >
 <div ref={container} className={styles.container}>
     <div className={styles.sticky}>
         {pictures.map(({ src, scale }, index) => (
@@ -54,9 +56,10 @@ export default function Index() {
     style={{ 
         position: "relative", 
         top: "-660px", 
-        left:"8.7vh",
+        left:"8.9vh",
         zIndex: -999, 
         transform: "scale(3.5)",
+        width:'430px',
         filter: 'drop-shadow(4px 4px 10px #721824, 0.25)' // Adjust the scale factor as needed
     }} 
     src='/images/HQ-bg-remove.png' 

@@ -31,7 +31,9 @@ export default function Index() {
     ];
 
     return (
-        <div>
+        <div style={{
+            marginTop: '150vh'
+        }}>
         <div ref={container} className={styles.container}>
             <div className={styles.body}>
             <div className={styles.word} style={{fontSize:'2rem',
