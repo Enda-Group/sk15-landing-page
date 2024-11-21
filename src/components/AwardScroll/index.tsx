@@ -2,7 +2,6 @@
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import styles from './styles.module.scss';
-import Footer from '../Footer/Footer';
 
 export default function AwardScroll() {
     const containerRef = useRef(null);

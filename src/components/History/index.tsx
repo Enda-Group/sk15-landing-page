@@ -1,4 +1,5 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
+import Image from "next/image"; // Import Image from next/image
 import './index.css';
 
 interface HistoryItem {
@@ -11,7 +12,7 @@ interface HistoryProps {
   data: HistoryItem[];
 }
 
-const History: React.FC<HistoryProps> = ({data}) => {
+const History: React.FC<HistoryProps> = ({ data }) => {
   useEffect(() => {
     const handleScroll = () => {
       const lines = document.querySelectorAll(".line");
@@ -54,33 +55,41 @@ const History: React.FC<HistoryProps> = ({data}) => {
   return (
     <div>
       {data.map((item, index) => (
-          [<div key={index} className="section">
+        [
+          <div key={index} className="section">
             {index % 2 === 0 && <div className="line left"></div>}
             <div className={`milestone ${index % 2 === 0 ? "left" : "right"}`}>
-  <div className="images-wrapper">
-    {item.images.map((image, imgIndex) => (
-      <img key={imgIndex} src={image} alt={`History ${item.year}`} />
-    ))}
-  </div>
-  <div
-    style={{
-      color: '#721824',
-      fontFamily: 'Poppins',
-      paddingTop: '15px'
-    }}
-    className="font-semibold text-[3rem]"
-  >
-    {item.year}
-  </div>
-  <p className="description-text">{item.description}</p>
-</div>
-
+              <div className="images-wrapper">
+                {item.images.map((image, imgIndex) => (
+                  <Image
+                    key={imgIndex}
+                    src={image}
+                    alt={`History ${item.year}`}
+                    width={500} // Replace with appropriate width
+                    height={300} // Replace with appropriate height
+                    layout="responsive" // Optional: Ensures responsive resizing
+                    objectFit="contain" // Optional: Adjusts image fit
+                  />
+                ))}
+              </div>
+              <div
+                style={{
+                  color: '#721824',
+                  fontFamily: 'Poppins',
+                  paddingTop: '15px'
+                }}
+                className="font-semibold text-[3rem]"
+              >
+                {item.year}
+              </div>
+              <p className="description-text">{item.description}</p>
+            </div>
             {index % 2 === 1 && <div className="line right"></div>}
           </div>,
-          <div key={`hline${index}`} className="hline"></div>]
-        )
-      )}
-      {/* REMOVE BELOW*/}
+          <div key={`hline${index}`} className="hline"></div>
+        ]
+      ))}
+      {/* REMOVE BELOW */}
       <div className="p-8"></div>
     </div>
   );
