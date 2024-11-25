@@ -78,7 +78,7 @@ const History: React.FC<HistoryProps> = ({ data }) => {
                   fontFamily: 'Poppins',
                   paddingTop: '15px'
                 }}
-                className="font-semibold text-[3rem]"
+                className="font-semibold font-poppins text-[3rem]"
               >
                 {item.year}
               </div>
