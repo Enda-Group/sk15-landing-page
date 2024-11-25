@@ -36,7 +36,7 @@ export default function Index() {
             className={`${styles.el} ${styles.monogramContainer}`}
           >
             <Monogram
-              style={{ filter: 'drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5))' }}
+              // style={{ filter: 'drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5))' }}
             />
           </motion.div>
         </div>
