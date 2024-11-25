@@ -22,7 +22,7 @@ export default function Paragraph({ paragraph }: ParagraphProps) {
 
   const words = paragraph.split(" ");
   return (
-    <p ref={container} className={styles.paragraph}>
+    <p ref={container} className={styles.paragraph} style={{fontFamily:'poppins'}}>
       {words.map((word: string, i: number) => {
         const start = i / words.length;
         const end = start + 1 / words.length;
@@ -39,7 +39,7 @@ export default function Paragraph({ paragraph }: ParagraphProps) {
 const Word = ({ children, progress, range }: WordProps) => {
   const opacity = useTransform(progress, range, [0, 1]);
   return (
-    <span className={styles.word}>
+    <span className={styles.word} style={{fontFamily:'poppins'}}>
       <span className={styles.shadow}>{children}</span>
       <motion.span style={{ opacity }}>{children}</motion.span>
     </span>
