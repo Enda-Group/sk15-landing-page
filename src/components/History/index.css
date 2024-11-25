@@ -52,7 +52,7 @@ body {
 .line {
     position: relative;
     width: 3px;
-    height: 85vh;
+    height: 850px;
     background: rgba(114, 24, 0, 0.1);
     z-index: 10;
 }

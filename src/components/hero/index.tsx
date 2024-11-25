@@ -32,7 +32,7 @@ export default function Index() {
 
     return (
         <div style={{
-            marginTop: '150vh'
+            marginTop: '1500px'
         }}>
         <div ref={container} className={styles.container}>
             <div className={styles.body}>

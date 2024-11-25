@@ -1,12 +1,12 @@
 .container {
-    height: 200vh;
+    height: 2000px;
     position: relative;
 
     .sticky {
         position: sticky;
         overflow: hidden;
         top: 0;
-        height: 100vh;
+        height: 1000px;
         width: 430px;
 
         .el {
@@ -21,7 +21,7 @@
             .imageContainer {
                 position: relative;
                 width:45vw;
-                height: 25vh;
+                height: 250px;
 
                 img {
                     object-fit: contain;  // Ensures the whole image is shown without cropping
@@ -30,53 +30,7 @@
                 }
             }
 
-            &:nth-of-type(2) {
-                .imageContainer {
-                    top: -30vh;
-                    left: 5vw;
-                    width: 35vw;
-                    height: 30vh;
-                }
-            }
-            &:nth-of-type(3) {
-                .imageContainer {
-                    top: -10vh;
-                    left: -25vw;
-                    width: 20vw;
-                    height: 45vh;
-                }
-            }
-            &:nth-of-type(4) {
-                .imageContainer {
-                    left: 27.5vw;
-                    width: 25vw;
-                    height: 25vh;
-                }
-            }
-            &:nth-of-type(5) {
-                .imageContainer {
-                    top: 27.5vh;
-                    left: 5vw;
-                    width: 20vw;
-                    height: 25vh;
-                }
-            }
-            &:nth-of-type(6) {
-                .imageContainer {
-                    top: 27.5vh;
-                    left: -22.5vw;
-                    width: 30vw;
-                    height: 25vh;
-                }
-            }
-            &:nth-of-type(7) {
-                .imageContainer {
-                    top: 22.5vh;
-                    left: 25vw;
-                    width: 15vw;
-                    height: 15vh;
-                }
-            }
+          
         }
     }
 }

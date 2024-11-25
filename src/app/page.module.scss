@@ -12,7 +12,7 @@
           color: black;
           margin: 0px;
           margin-top:0px;
-          font-size: 5vw;
+          font-size: 2rem;
           line-height: 5vw;
           text-transform: uppercase;
           text-align: center;
@@ -34,7 +34,7 @@
       width: 100%;
       justify-content: center;
       position: relative;
-      margin-top: 0vh;
+      
       
   
       .imageContainer {
@@ -44,24 +44,24 @@
             object-fit: cover;
         }
         &:nth-of-type(1){
-            top: 2vh;
+            top: 20px;
         //    left: 4vw;
-            height: 50vh;
+            height: 500px;
             width: 100%;
             z-index: 3;
         }
         &:nth-of-type(2){
-            top: 12vh;
+            top: 120px;
            
-            height: 50vh;
-            width:50vh;
+            height: 500px;
+            width:500px;
             z-index: 2;
         }
         &:nth-of-type(3) { // This targets Picture3
-            top: 6vh;
+            top: 60px;
             // left: 10vw; // Adjusted left position
-            height: 50vh;
-            width: 40vh;
+            height: 500px;
+            width: 400px;
               z-index: 1;
           }
       }
@@ -69,7 +69,7 @@
 
   }.textSection {
   margin-top:   0rem; /* Adds space between images and text */
-  padding: 5vh 5vw;  /* Optional: Adds side padding for readability */
+  padding: 50px;  /* Optional: Adds side padding for readability */
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }

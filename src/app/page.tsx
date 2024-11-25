@@ -25,9 +25,9 @@ export default function Home() {
   return (<div>
     <div className="App">
       <div style={{
-        height: '45vh'
+        height: '450px'
       }}></div>
-      <h1 style={{ color:'#721824', fontFamily:'poppins', zIndex:'90000',fontSize:'1.5rem', fontWeight:'600'}}>
+      <h1 style={{ color:'#721824', fontFamily:'poppins', zIndex:'90000',fontSize:'1.6rem', fontWeight:'600'}}>
         The Home Of</h1>
       <StickyNavbar/>
       
@@ -38,7 +38,7 @@ export default function Home() {
       </div>
       
       <VisionMission />
-      <div className="p-8">
+      <div className="p-8"> 
       </div>
       <History data={[{
         year: '2009',

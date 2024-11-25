@@ -23,7 +23,7 @@ export default function Index() {
   const rotateX = useTransform(scrollYProgress, [0.7, 1], [0, 10]);
 
   return (
-    <div className="top-0 absolute overflow-x-clip h-[200vh]">
+    <div className="top-0 absolute overflow-x-clip h-[2000px]">
       <div ref={container} className={styles.container}>
         <div className={styles.sticky}>
           <motion.div
@@ -47,7 +47,7 @@ export default function Index() {
         style={{
           position: 'relative',
           top: '-660px',
-          left: '8.9vh',
+          left: '89px',
           zIndex: -999,
           transform: 'scale(3.5)',
           width: '430px',
