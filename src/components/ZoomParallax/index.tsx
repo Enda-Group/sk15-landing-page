@@ -46,8 +46,8 @@ export default function Index() {
       <Image
         style={{
           position: 'relative',
-          top: '-660px',
-          left: '89px',
+          top: '-690px',
+          left: '85px',
           zIndex: -999,
           transform: 'scale(3.5)',
           width: '430px',
