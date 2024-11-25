@@ -23,7 +23,7 @@ body {
 
   margin: 0;
   padding: 0;
-
+  
   color: var(--accent);
   
 }
@@ -33,6 +33,8 @@ body {
   /* height: 700vh; */
   width:430px;
   height: auto;
+  font-family: 'Poppins', sans-serif !important;
+
 }
 
 
