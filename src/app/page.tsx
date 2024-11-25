@@ -10,6 +10,7 @@ import CounterZoom from "@/components/CounterZoom";
 import AwardScroll from "@/components/AwardScroll";
 import History from "@/components/History";
 import Footer from "@/components/Footer/Footer";
+import "./globals.css";
 export default function Home() {
   useEffect(() => {
     const lenis = new Lenis();
