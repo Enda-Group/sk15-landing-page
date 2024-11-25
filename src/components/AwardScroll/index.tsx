@@ -64,7 +64,7 @@ export default function AwardScroll() {
     };
 
     return (
-        <div ref={containerRef} className={styles.container} >
+        <div ref={containerRef} className={styles.container}>
             {/* Row 1 */}
             <motion.div className={styles.row} animate={scrollAnimationRow1}>
                 {loopedRow1.map((award, index) => (
@@ -109,3 +109,4 @@ export default function AwardScroll() {
         </div>
     );
 }
+
