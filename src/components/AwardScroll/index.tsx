@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import styles from './styles.module.scss';
 
+
 export default function AwardScroll() {
     const containerRef = useRef(null);
 
@@ -63,7 +64,7 @@ export default function AwardScroll() {
     };
 
     return (
-        <div ref={containerRef} className={styles.container}>
+        <div ref={containerRef} className={styles.container} >
             {/* Row 1 */}
             <motion.div className={styles.row} animate={scrollAnimationRow1}>
                 {loopedRow1.map((award, index) => (

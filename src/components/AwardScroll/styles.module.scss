@@ -1,4 +1,6 @@
 // src/components/AwardScroll/styles.module.scss
+
+/* Ensure font import includes semi-bold weight */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 .container {
@@ -19,11 +21,11 @@
 .awardText {
     font-size: 1.5rem;
     color: #721824;
-    font-weight: 600; /* Use 600 for semi-bold */
+    font-weight: 600 !important; /* Use !important for specificity */
     white-space: nowrap;
     text-align: center;
     padding: 0 1rem;
     position: relative;
     display: inline-block;
-    font-family: 'Poppins', sans-serif; /* Add fallback font */
+    font-family: 'Poppins', sans-serif !important; /* Add fallback font */
 }
