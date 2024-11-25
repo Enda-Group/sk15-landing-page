@@ -19,7 +19,7 @@ body {
 }
 
 .section {
-    height: 85vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
