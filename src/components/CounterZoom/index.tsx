@@ -52,7 +52,7 @@ export default function CounterZoom() {
     style={{ objectFit: 'cover' }} // Ensure the image covers the container
 />
 {index === 0 && (
-    <motion.div style={{ opacity: textOpacity }} className={styles.textOverlay}>
+    <motion.div style={{ opacity: textOpacity, backdropFilter:'blur(4px)' }} className={styles.textOverlay} >
         <div>
         <RandomCountUpCounter/>
         </div>

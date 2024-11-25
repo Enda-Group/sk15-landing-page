@@ -27,7 +27,7 @@ export default function Home() {
       <div style={{
         height: '45vh'
       }}></div>
-      <h1 style={{ color:'#721824', fontFamily:'poppins', zIndex:'90000'}}>
+      <h1 style={{ color:'#721824', fontFamily:'poppins', zIndex:'90000',fontSize:'1.5rem', fontWeight:'600'}}>
         The Home Of</h1>
       <StickyNavbar/>
       
