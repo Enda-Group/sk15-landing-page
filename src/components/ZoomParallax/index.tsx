@@ -24,7 +24,7 @@ export default function Index() {
 
   return (
     <div className="top-0 absolute overflow-x-clip h-[2000px]">
-      <div ref={container} className={styles.container}>
+      <div ref={container} className={styles.container} >
         <div className={styles.sticky}>
           <motion.div
             style={{

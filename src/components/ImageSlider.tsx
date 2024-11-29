@@ -51,7 +51,7 @@ export default function ImageSlider(): JSX.Element {
         <a href="https://sitikhadijah.com/products/laman-khadijah-admission-with-sewing-experience
 " target="_blank" rel="noopener noreferrer">
           <button className="px-6 py-2 m-4 bg-[#e8dfcc]/70  
-          text-[#721824] font-poppins rounded-lg font-semi hover:bg-[#e8dfcc]/90 transition duration-300 ease-in-out">
+          text-[#721824] font-poppins rounded-lg font-semibold hover:bg-[#e8dfcc]/90 transition duration-300 ease-in-out">
             Book a Slot 
           </button></a>
         </div>
