@@ -22,10 +22,11 @@ export default function Home() {
 
     requestAnimationFrame(raf);
   }, []);
-  return (<div>
+  return (
     <div className="App">
       <div style={{
-        height: '450px'
+        height: '450px',
+        
       }}></div>
       <h1 style={{ color:'#721824', fontFamily:'poppins', zIndex:'90000',fontSize:'1.6rem', fontWeight:'600'}}>
         The Home Of</h1>
@@ -71,6 +72,6 @@ export default function Home() {
       <Footer/>
       </div>
   
-    </div></div>
+    </div>
   );
 } 
