@@ -2,7 +2,6 @@ import styles from './styles.module.scss';
 import Picture1 from '../../../public/images/SK151.jpg';
 import Picture2 from '../../../public/images/SK152.jpg';
 import Picture3 from '../../../public/images/SK153.jpg';
-
 import Image from 'next/image';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import { useRef } from 'react';
@@ -39,31 +38,29 @@ export default function CounterZoom() {
     ];
 
     return (
-        <div ref={container} className={styles.container}>
-            <div className={styles.sticky}>
-                {pictures.map(({ src, scale }, index) => (
-                    <motion.div key={index} style={{ scale }} className={styles.el}>
-                        <div className={styles.imageContainer}>
-                        <Image
-    src={src}
-    fill
-    alt="image"
-    placeholder='blur'
-    style={{ objectFit: 'cover' }} // Ensure the image covers the container
-/>
-{index === 0 && (
-    <motion.div style={{ opacity: textOpacity, backdropFilter:'blur(4px)' }} className={styles.textOverlay} >
-        <div>
-        <RandomCountUpCounter/>
-        </div>
-    </motion.div>
-)}
+<div ref={container} className={styles.container}>
+    <div className={styles.sticky}>
+        {pictures.map(({ src, scale }, index) => (
 
-                        </div>
-                    </motion.div>
-                ))}
+<motion.div key={index} style={{ scale }} className={styles.el}>
+    <div className={styles.imageContainer}>
+        <Image src={src}
+               alt="image"
+               placeholder='blur'
+               style={{ objectFit: 'cover' }}/>
+
+        {index === 0 && (
+        <motion.div style={{opacity: textOpacity, 
+                            backdropFilter:'blur(4px)'}} 
+                    className={styles.textOverlay} >
+            <div>
+                <RandomCountUpCounter/>
             </div>
-            
-        </div>
+        </motion.div>)}
+
+    </div>
+</motion.div>))}
+    </div>
+</div>
     );
 }

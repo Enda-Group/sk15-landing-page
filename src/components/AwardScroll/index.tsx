@@ -63,50 +63,60 @@ export default function AwardScroll() {
         }
     };
 
-    return (<div>
-        <h1 className='text-gray-700 font-poppins font-medium pb-6 text-[1.2rem]'>We`ve won a few things</h1>
-        <div ref={containerRef} className={`${styles.container} poppins-semibold text-[#721824]`}>
-            {/* Row 1 */}
-            <motion.div className={styles.row} animate={scrollAnimationRow1}>
-                {loopedRow1.map((award, index) => (
-                    <motion.h2 key={`row1-${index}`} className={styles.awardText}>
-                        {award}
-                    </motion.h2>
-                ))}
-            </motion.div>
+    return (
+<div>
+    <h1 className='text-gray-700 
+    font-poppins font-medium 
+    pb-6 text-[1.2rem]'>We`ve won a few things</h1>
 
-            {/* Row 2 */}
-            <motion.div className={styles.row} animate={scrollAnimationRow2}>
-                {loopedRow2.map((award, index) => (
-                    <motion.h2 key={`row2-${index}`} className={styles.awardText}>
+    <div ref={containerRef} 
+         className={`${styles.container} 
+         poppins-semibold text-[#721824]`}>
+            
+{/* Row 1 */}
+<motion.div className={styles.row} animate={scrollAnimationRow1}>
+    {loopedRow1.map((award, index) => (
+        <motion.h2 key={`row1-${index}`} className={styles.awardText}>
                         {award}
-                    </motion.h2>
-                ))}
-            </motion.div>
+        </motion.h2>
+    ))}
+</motion.div>
 
-            {/* Row 3 */}
-            <motion.div className={styles.row} animate={scrollAnimationRow3}>
-                {loopedRow3.map((award, index) => (
-                    <motion.h2 key={`row3-${index}`} className={styles.awardText}>
-                        {award}
-                    </motion.h2>
-                ))}
-            </motion.div>
+{/* Row 2 */}
+<motion.div className={styles.row} animate={scrollAnimationRow2}>
+    {loopedRow2.map((award, index) => (
+        <motion.h2 key={`row2-${index}`} className={styles.awardText}>
+            {award}
+        </motion.h2>
+    ))}
+</motion.div>
 
-            <motion.div className={styles.row} animate={scrollAnimationRow1}>
-                {loopedRow1.map((award, index) => (
-                    <motion.h2 key={`row1-${index}`} className={styles.awardText}>
-                        {award}
-                    </motion.h2>
-                ))}
-            </motion.div>
-            <motion.div className={styles.row} animate={scrollAnimationRow2}>
-                {loopedRow2.map((award, index) => (
-                    <motion.h2 key={`row2-${index}`} className={styles.awardText}>
-                        {award}
-                    </motion.h2>
-                ))}
-            </motion.div>
+{/* Row 3 */}
+<motion.div className={styles.row} animate={scrollAnimationRow3}>
+    {loopedRow3.map((award, index) => (
+        <motion.h2 key={`row3-${index}`} className={styles.awardText}>
+            {award}
+        </motion.h2>
+    ))}
+</motion.div>
+
+{/* Row 4 */}
+<motion.div className={styles.row} animate={scrollAnimationRow1}>
+    {loopedRow1.map((award, index) => (
+        <motion.h2 key={`row1-${index}`} className={styles.awardText}>
+            {award}
+        </motion.h2>
+    ))}
+</motion.div>
+
+{/* Row 5 */}
+<motion.div className={styles.row} animate={scrollAnimationRow2}>
+    {loopedRow2.map((award, index) => (
+        <motion.h2 key={`row2-${index}`} className={styles.awardText}>
+            {award}
+        </motion.h2>
+    ))}
+</motion.div>
         </div></div>
     );
 }

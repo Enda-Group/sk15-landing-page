@@ -89,7 +89,6 @@ const History: React.FC<HistoryProps> = ({ data }) => {
           <div key={`hline${index}`} className="hline"></div>
         ]
       ))}
-      {/* REMOVE BELOW */}
       <div className="p-8"></div>
     </div>
   );

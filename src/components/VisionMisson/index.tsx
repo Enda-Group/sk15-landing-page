@@ -39,7 +39,6 @@ export default function Index() {
                 </div>
             </div>
 
-            {/* Hero Images Section */}
             <div className={styles.images}>
                 {images.map(({ src, y }, i) => (
                     <motion.div style={{ y }} key={`image_${i}`} className={styles.imageContainer}>
@@ -53,7 +52,6 @@ export default function Index() {
                 ))}
             </div>
 
-            {/* Text Section Below Hero Images */}
            
         </div> <div className={styles.textSection}>
         <div className="text-gray-700 font-poppins font-semibold text-[1.5rem] pt-4">To Nurture </div>

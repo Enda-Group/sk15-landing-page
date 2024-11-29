@@ -4,7 +4,6 @@ import styles from '../../app/page.module.scss';
 import Picture1 from '../../../public/images/sk15- telekung1.png';
 import Picture2 from '../../../public/images/sk15- telekung2.png';
 import Picture3 from '../../../public/images/sk15- telekung3.png';
-
 import Image from "next/image";
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Paragraph from "../Word/Word";
@@ -31,38 +30,33 @@ export default function Index() {
     ];
 
     return (
-        <div style={{
-            marginTop: '1500px'
-        }}>
-        <div ref={container} className={styles.container}>
-            <div className={styles.body}>
+<div style={{marginTop: '1500px'}}>
+    <div ref={container} className={styles.container}>
+        
+        <div className={styles.body}>
             <div className={styles.word} style={{fontSize:'2rem',
                  fontFamily:"Poppins",
                  color:"#721824",
                  paddingTop:'15px'}}>
-                    <div className="font-bold text-[#721824]">{word}</div>
-                </div>
+                <div className="font-bold text-[#721824]">{word}</div>
             </div>
+        </div>
 
-            {/* Hero Images Section */}
-            <div className={styles.images}>
-                {images.map(({ src, y }, i) => (
-                    <motion.div style={{ y }} key={`image_${i}`} className={styles.imageContainer}>
-                        <Image 
-                            src={src}
-                            placeholder="blur"
-                            alt="image"
-                            fill
-                            
-                        />
-                    </motion.div>
-                ))}
-            </div>
+        <div className={styles.images}>
+            {images.map(({ src, y }, i) => (
+                <motion.div style={{ y }} 
+                key={`image_${i}`} 
+                className={styles.imageContainer}>
+                    <Image src={src}
+                           placeholder="blur"
+                           alt="image"/>
+                </motion.div> ))}
+        </div>
 
-            {/* Text Section Below Hero Images */}
-           
-        </div> <div className={styles.textSection}>
-                <Paragraph paragraph={paragraph} />
-            </div></div>
+    </div> 
+    <div className={styles.textSection}>
+        <Paragraph paragraph={paragraph} />
+    </div>
+</div>
     );
 }
