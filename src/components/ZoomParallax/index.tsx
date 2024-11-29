@@ -2,7 +2,6 @@
 import { useScroll, useTransform, motion } from 'framer-motion';
 import { useRef } from 'react';
 import styles from './styles.module.scss';
-import Monogram from '../../../public/images/monogramGold.svg';
 import Image from 'next/image';
 
 export default function Index() {
