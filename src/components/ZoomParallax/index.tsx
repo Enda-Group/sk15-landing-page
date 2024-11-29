@@ -35,8 +35,16 @@ export default function Index() {
             }}
             className={`${styles.el} ${styles.monogramContainer}`}
           >
-            <Monogram
-              // style={{ filter: 'drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5))' }}
+             <Image
+              src="/images/monogramGold.png" // Path to your PNG image
+              width={400} // Adjust as needed
+              height={400} // Adjust as needed
+              alt="Monogram Gold"
+              style={{
+                width: '400px',
+                height: '400px',
+                objectFit: 'contain', // Ensures the aspect ratio is preserved
+              }}
             />
           </motion.div>
         </div>
