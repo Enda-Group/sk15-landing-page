@@ -40,6 +40,8 @@ export default function Home() {
       
       <VisionMission />
       <div className="p-8"> 
+         <h1 style={{ color:'#721824', fontFamily:'poppins',fontSize:'2rem', fontWeight:'800'}}>
+      The Road <br/> We've Travelled</h1>
       </div>
       <History data={[{
         year: '2009',
@@ -63,6 +65,10 @@ export default function Home() {
         year: '2020',
         description: 'Opened a boutique in the prestigious KLCC, further establishing the brand’s presence in high-profile locations.',
         images: ['/images/2020.png']
+      },{
+        year: '2024',
+        description: `A historic moment was created at the SK factory this year with the grand opening of the vibrant Laman Khadijah. From the opening speeches to the fashion showcase within the SK factory, the event was made even more special by the presence of many esteemed guests and the full support of the SK Team. Let’s create more meaningful moments together in SK's new home!`,
+        images: ['/images/2024.png']
       }
       ]}/>
 
