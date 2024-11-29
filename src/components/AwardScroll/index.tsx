@@ -64,7 +64,7 @@ export default function AwardScroll() {
     };
 
     return (<div>
-        <h1 className='text-gray-700 font-poppins font-medium pb-6 text-[1.2rem]'>We've won a few things</h1>
+        <h1 className='text-gray-700 font-poppins font-medium pb-6 text-[1.2rem]'>We`ve won a few things</h1>
         <div ref={containerRef} className={`${styles.container} poppins-semibold text-[#721824]`}>
             {/* Row 1 */}
             <motion.div className={styles.row} animate={scrollAnimationRow1}>
