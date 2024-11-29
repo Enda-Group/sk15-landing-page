@@ -41,7 +41,7 @@ export default function Home() {
       <VisionMission />
       <div className="p-8"> 
          <h1 style={{ color:'#721824', fontFamily:'poppins',fontSize:'2rem', fontWeight:'800'}}>
-      The Road <br/> We`ve Travelled</h1>
+      The Road <br/> We&apos;ve Travelled</h1>
       </div>
       <History data={[{
         year: '2009',
