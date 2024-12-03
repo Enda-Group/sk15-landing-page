@@ -7,7 +7,7 @@
         position: sticky;
         overflow: hidden;
         top: 0;
-        height: 1000px;
+        height: 900px;
 
         .el {
             width: 100%;
@@ -20,10 +20,10 @@
 
             .textOverlay {
                 position: absolute;
-                top: 50%;
+                top: 46%;
                 left: 50%;
                 width: 80vw;
-                height: 380px;
+                height: 330px;
                 display: flex;
                 transform: translate(-50%, -50%);
                 color: #fff;
@@ -32,7 +32,7 @@
                 font-size: 0.5rem;
                 text-align: center;
                 will-change: backdrop-filter;
-                backdrop-filter: blur(5px);
+                backdrop-filter: blur(4px);
                 padding: 0.5rem;
                 border-radius: 8px;
                 // Ensure it appears on top
