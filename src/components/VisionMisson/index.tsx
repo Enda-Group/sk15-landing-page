@@ -9,7 +9,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Paragraph from "../Word/Word";
 
 const word = "Vision and Mission";
-const paragraph = `To be the preferred international brand that advocates comfort, practicality and modesty in its lifestyle products`;
+const paragraph1 = `To be the preferred international brand that advocates comfort, practicality and modesty in its lifestyle products`;
+const paragraph2 = `Expressing love based on Lambang Cinta Abadi elements through creating thoughtful product and cherish meaningful relationship`;
 
 export default function Index() {
     const container = useRef(null);
@@ -54,9 +55,15 @@ export default function Index() {
 
            
         </div> <div className={styles.textSection}>
-        <div className="text-gray-700 font-poppins font-semibold text-[1.5rem] pt-4">To Nurture </div>
-            <div className="text-gray-700 font-poppins font-semibold  text-[1.5rem]"> Purposeful Lifestyle</div>
-                <Paragraph  paragraph={paragraph} />
-            </div></div>
+    
+            <div className="text-gray-700 font-poppins font-semibold  text-[1.5rem]"> Vision</div>
+                <Paragraph  paragraph={paragraph1} />
+            </div>
+            <div className={styles.textSection}>
+       
+            <div className="text-gray-700 font-poppins font-semibold  text-[1.5rem]">Mission</div>
+                <Paragraph  paragraph={paragraph2} />
+            </div>
+            </div>
     );
 }

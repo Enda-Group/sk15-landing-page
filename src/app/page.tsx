@@ -11,6 +11,7 @@ import AwardScroll from "@/components/AwardScroll";
 import History from "@/components/History";
 import Footer from "@/components/Footer/Footer";
 import "./globals.css";
+import BookASlot from "@/components/BookASlot";
 export default function Home() {
   useEffect(() => {
     const lenis = new Lenis();
@@ -33,7 +34,7 @@ export default function Home() {
       <StickyNavbar/>
       
       <ZoomParallax   />
-      
+      <BookASlot/>
       <FramerMotion />
       <div className="p-8">
       </div>
